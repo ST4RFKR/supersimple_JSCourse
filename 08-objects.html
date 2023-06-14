@@ -43,6 +43,58 @@
 // console.log(product2.fun);
 // product2.fun();
 
+// console.log(JSON.stringify(product2));
+// const product2Json = JSON.stringify(product2); // из ОБДЖ В ДЖСОН 
+// console.log(JSON.parse(product2Json));        // из ДЖСОН В ОБДЖ ДЖС
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+
+const obj1 = {
+    message: 'hello'
+};
+
+console.log(obj1);
+
+const obj2 = obj1;
+obj1.message = 'good job!'
+
+console.log(obj1);
+console.log(obj2);
+
+const obj3 = {
+    message: 'Good job!'
+};
+
+console.log(obj3 === obj1);
+
+console.log(obj2 === obj1);
+
+const obj4 = {
+    message: 'Good job!',
+    price: 799
+};
+
+// const massege = obj4.message;
+
+const { message, price } = obj4;
+
+console.log(message);
+console.log(price);
+
+const obj5 = {
+    // message: message,
+    message,
+    // method: function function1 () {
+    //     console.log('method');
+    // }
+    method () {
+        console.log('method')
+    }
+};
+
+console.log(obj5);
+
+obj5.method();
     </script>
 </body>
 </html>
