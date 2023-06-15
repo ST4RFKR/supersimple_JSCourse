@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Projects</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .youtube-btn{
+            background-color: black;
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 35px;
+        }
+        .subscribed-btn{
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+        .js-cost-input{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 15px;
+        }
+        .input-button{
+            background-color: green;
+            color: white;
+            border: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 15px;
+            cursor: pointer; 
+        }
+    </style>
 </head>
 <body>
     <p>YouTube Subscribe button</p>
@@ -13,7 +53,7 @@
 
     <p>Amazon Shipping Calculator</p>
     <input class="js-cost-input" placeholder="Cost of order" type="text" onkeydown="handleCostKeyDown(event);">
-    <button class="" onclick="
+    <button class="input-button" onclick="
     calculateTotal();
     ">Calculate</button>
     <p class="js-total-cost"></p>
@@ -39,8 +79,10 @@
 
         if(youtubeBtn.innerHTML === 'Subscribe'){
             youtubeBtn.innerHTML = 'Subscribed';
+            youtubeBtn.classList.add('subscribed-btn');
         } else if (youtubeBtn.innerHTML === 'Subscribed'){
             youtubeBtn.innerHTML = 'Subscribe';
+            youtubeBtn.classList.remove('subscribed-btn');
     }
     }
 
