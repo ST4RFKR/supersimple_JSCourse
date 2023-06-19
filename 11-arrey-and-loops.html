@@ -212,30 +212,97 @@
 // console.log(countPositive([-2, -4, 6, 7, 10]));
 
 // 11l 
-let array = [0, 1 , -2 , -3, 5, 9];
+// let array = [0, 1 , -2 , -3, 5, 9];
 
-function minMax(arr){
-    let minNumb = arr[0];
-    let maxNumb = arr[0];
+// function minMax(arr){
+//     let minNumb = arr[0];
+//     let maxNumb = arr[0];
 
-    let i = 1;
-    while(i < arr.length){
-        i++;
-        if (arr[i] < minNumb){
-            minNumb = arr[i];
-        }else if (arr[i] > maxNumb){
-            maxNumb = arr[i];
-        }
-    }
-    return {
-        minNumb,
-        maxNumb
-    };
-}
-console.log(minMax(array));
-console.log(minMax([1, 5,7,3,1,-55,42,-543]))
+//     if (arr.length === 0){
+//             return {
+//                 minNumb: null,
+//                 maxNumb: null 
+//             };
+//         }
 
+//     let i = 1;
+//     while(i < arr.length){
+//         i++;
+//         if (arr[i] < minNumb){
+//             minNumb = arr[i];
+//         }else if (arr[i] > maxNumb){
+//             maxNumb = arr[i];
+//         }
+//         // }else if (){
 
+//         // }
+//     }
+//     return {
+//         minNumb,
+//         maxNumb,
+//     };
+// }
+// console.log(minMax(array));
+// console.log(minMax([1, 5,7,3,1,-55,42,-543]));
+// console.log(minMax([3]));
+// console.log(minMax([]));
+
+// 11n 
+// let arrayString = ['apple', 'apple', 'grape', 'apple', 'grape', 'grape', 'grape', 'grape', 'grape','grape','grape','grape','grape','grape',]
+// function countWord (arrString){
+// let appleCount = '';
+// let grapeCount = '';
+// let arrArple = [];
+// let arrGrape = [];
+
+// let i = 0;
+// while (i < arrString.length){
+//     if (arrString[i] === 'apple'){
+//         arrArple.push(arrString[i]);
+//         appleCount = arrArple.length;
+//     }else if (arrString[i] === 'grape'){
+//         arrGrape.push(arrString[i]);
+//         grapeCount = arrGrape.length;
+//     }
+//     i++;
+// }
+
+//     return {
+//         appleCount,
+//         grapeCount
+//     }
+// }
+// console.log(countWord(arrayString));
+// const countWords = (words) => { debugger;
+//   const wordCount = {};
+
+//   words.forEach((word) => {
+//     if (word in wordCount) {
+//       wordCount[word] += 1;
+//     } else {
+//       wordCount[word] = 1;
+//     }
+//   });
+
+//   return wordCount;
+// };
+// let words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple', 'grape'];
+// let result = countWords(words);
+// console.log(result); debugger;
+// function countWord(arrString, word) {
+//   let count = 0;
+
+//   for (const element of arrString) {
+//     if (element === word) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// console.log(countWord(arrayString, 'apple')); // Вывод: 3
+// console.log(countWord(arrayString, 'grape'));
 
 </script>
 </body>
