@@ -25,8 +25,8 @@ function renderTodoList () {
         item.addEventListener('click', () => {
             todoList.splice(i, 1);
                 renderTodoList();
-        })
-    })
+        });
+    });
 }
 renderTodoList ();
 
