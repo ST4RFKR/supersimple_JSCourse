@@ -42,6 +42,22 @@ p{
     background-color: brown;
     font-size: 15px;
     padding: 6px;
+}.js-name-item{
+    position: relative;
+    /* padding-left: 25px; */
+}
+.checked {
+    text-decoration: line-through;
+}
+.checked::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/check.svg);
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -25px;
+    
 }
 
 

@@ -12,11 +12,6 @@ const minutes = document.querySelector('.minutes'),
       let countMinutes = 0;
 
 const startTimer = function () {
-if(countMiliseconds){
-console.log(1);
-}else {
-    console.log(2);
-}
     
     countMiliseconds++;
     miliseconds.innerHTML = countMiliseconds;
